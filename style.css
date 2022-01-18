@@ -40,8 +40,9 @@ ul {
 }
 
 .menu-options .max-width div img {
-    width: 10rem;
+    width: 8rem;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .ul-menu-options {
@@ -53,14 +54,14 @@ ul {
 
 .ul-menu-options li {
     font-size: 1rem;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .ul-menu-options li a {
     color: #fff;
     font-family: 'Montserrat';
     font-weight: 600;
-    padding: 30px 0;
+    padding: 37px 0;
     transition: all 0.3s ease-out;
 }
 
@@ -86,4 +87,30 @@ ul {
 
 .cta-abra:hover {
     transform: scale(1.04);
+}
+
+ion-icon {
+    color: #fff;
+}
+
+ion-icon[name='menu'] {
+    font-size: 2rem;
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .ul-menu-options li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 775px) {
+    .cta-abra {
+        display: none;
+    }
+
+    ion-icon[name='menu'] {
+        color: #C80000;
+        display: block;
+    }
 }
